@@ -1,6 +1,22 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import { createApp } from "vue";
+import App from "./App.vue";
+// import "./registerServiceWorker";
+import router from "./router";
+import store from "./store";
+import NavBar from "./components/NavBar.vue";
+import SideBar from "./components/SideBar.vue";
+import AllTasksInbox from "./components/AllTaskInbox.vue";
+import AllTasksToday from "./components/AllTasksToday.vue";
+import SubtaskInbox from "./components/SubtaskInbox.vue";
+import SubTaskToday from "./components/SubTaskToday.vue";
 
-createApp(App).use(store).use(router).mount('#app')
+const app = createApp(App);
+app.use(store);
+app.use(router);
+app.mount("#app");
+app.component("nav-bar", NavBar);
+app.component("side-bar", SideBar);
+app.component("all-tasks-inbox", AllTasksInbox);
+app.component("all-tasks-today", AllTasksToday);
+app.component("sub-task-today", SubTaskToday);
+app.component("sub-task-inbox", SubtaskInbox);
