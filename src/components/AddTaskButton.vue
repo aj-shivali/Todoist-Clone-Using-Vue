@@ -7,7 +7,7 @@
     >
       Add Task
     </div>
-    <div class=" add-task" :class="[isOpen ? 'block' : 'none']">
+    <div class=" add-task" :class="[isOpen ? 'block' : 'none']"> 
       <input
         class="box-heading"
         id="content"
