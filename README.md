@@ -1,4 +1,4 @@
-# todoist-vue
+# todoist-vue 
 
 ## Project setup
 ```
